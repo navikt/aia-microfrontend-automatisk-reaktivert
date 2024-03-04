@@ -37,9 +37,9 @@ jobs:
 #      - id: cdn-upload
 #        uses: navikt/frontend/actions/cdn-upload/v1@main
 #        with:
-#          cdn-team-name: mitt-team-navn
+#          cdn-team-name: paw
 #          source: ./dist/
-#          destination: "tms-microfrontend-template"
+#          destination: "aia-microfrontend-automatisk-reaktivert"
 
       - name: "Extract manifest url"
         id: extract-manifest-url
@@ -53,7 +53,7 @@ jobs:
 #    needs: build
 #    with:
 #      cluster: dev-gcp
-#      id: "tms-microfrontend-template"
+#      id: "aia-microfrontend-automatisk-reaktivert"
 #      url: ${{needs.build.outputs.upload_url}}
 #      commitmsg: ${{ github.event.head_commit.message}}
 #    secrets: inherit
@@ -64,7 +64,7 @@ jobs:
 #    needs: build
 #    with:
 #      cluster: prod-gcp
-#      id: "tms-microfrontend-template"
+#      id: "aia-microfrontend-automatisk-reaktivert"
 #      url: ${{needs.build.outputs.upload_url}}
 #      commitmsg: ${{ github.event.head_commit.message}}
 #    secrets: inherit
